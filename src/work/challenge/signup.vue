@@ -17,11 +17,11 @@
             <p>อีเมล</p>
             <input v-model.trim="email"  />
         </div>
-         <div class="inputContainer">
+        <div class="inputContainer">
             <p>รหัสผ่าน</p>
             <input v-model.trim="password"  />
         </div>
-         <div class="inputContainer">
+        <div class="inputContainer">
             <p>รหัสผ่านอีกครั้ง</p>
             <p v-show="errorMessage" class="errorMessage">{{ this.errorMessage }}</p>
             <input v-model.trim="confirmPassword" @change="checkPassword" />
@@ -58,7 +58,7 @@ export default {
             console.log(data, this[data])
         },
         checkPassword: function () {
-             if (this.password != this.confirmPassword) {
+            if (this.password != this.confirmPassword) {
                 this.errorMessage = 'รหัสผ่านไม่ตรงกัน'
             } else {
                 this.errorMessage = null
