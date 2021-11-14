@@ -46,7 +46,7 @@ export default {
     methods: {
         submit(inputName){
             // Input นี้มีค่า เท่าใด
-            this.pet === 'dog' ? alert('Success’') : alert('Please enter ...')
+            this.pet ? alert('Success’') : alert('Please enter ...')
             console.log(inputName,this[inputName])
         }
     }
